@@ -1,0 +1,64 @@
+@font-face{
+    font-family: "Inter";
+    src: url("/assets/Inter-Regular.ttf") format("truetype");
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: "Inter", sans-serif;
+    padding-top: 170px;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 400;
+    margin: 28px 0 0 43px;
+}
+
+h3 {
+    font-size: 128px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 134px;
+}
+
+#welcome-to {
+    display: flex;
+    flex-direction: row;
+}
+
+#title-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+    margin-top: 42px;
+}
+
+#title-buttons button {
+    color:#f0f0f0;
+    font-size: 32px;
+    font-weight: 600;
+    background-color: #77867F;
+    border-radius: 45px;
+    border: none;
+    width: 331px;
+    height: 100px;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
