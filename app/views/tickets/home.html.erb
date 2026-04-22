@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag 'style.css' %>
+<div id="welcome-to">
+    <h1>WELCOME</h1>
+    <h2>to...</h2>
+</div>
+<h3>SPARTY SOLUTIONS</h3>
+<h4>Need Help?</h4>
+<div id="title-buttons">
+    <%= link_to "Create Ticket", new_ticket_path, :class => "title-button" %>
+    <%= link_to "View Tickets", index_path, :class => "title-button" %>
+    <%= link_to "FAQ", faq_path, :class => "title-button" %>
+</div>

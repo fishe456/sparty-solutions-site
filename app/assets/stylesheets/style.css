@@ -1,12 +1,6 @@
-@font-face{
-    font-family: "Inter";
-    src: url("/assets/Inter-Regular.ttf") format("truetype");
-}
-
 body {
     background-color: #f0f0f0;
     font-family: "Inter", sans-serif;
-    padding-top: 170px;
 }
 
 h1 {
@@ -34,6 +28,7 @@ h4 {
 #welcome-to {
     display: flex;
     flex-direction: row;
+    margin-top: 170px;
 }
 
 #title-buttons {
@@ -43,7 +38,7 @@ h4 {
     margin-top: 42px;
 }
 
-#title-buttons button {
+.title-button {
     color:#f0f0f0;
     font-size: 32px;
     font-weight: 600;
@@ -52,6 +47,60 @@ h4 {
     border: none;
     width: 331px;
     height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+
+a:hover, a:link, a:visited {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+#faq-title {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 36px 0 80px 0;
+    color: #3a5046;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#tickets-title {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 36px 0 80px 0;
+}
+
+.question {
+    justify-content: center;
+    margin: 45px 20% 0 20%;
+}
+
+.question h2 {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.question p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#back-button{
+    color:#f0f0f0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #77867F;
+    border-radius: 45px;
+    border: none;
+    width: 150px;
+    height: 60px;
+    margin: 50px 0 0 0;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
 }
 
 * {
