@@ -5,9 +5,9 @@ service: sparty_solutions_site
 image: sparty_solutions_site
 
 # Deploy to these servers.
-servers:
+servers: 
   web:
-    - 192.168.0.1
+    - 18.221.48.18
   # job:
   #   hosts:
   #     - 192.168.0.1
