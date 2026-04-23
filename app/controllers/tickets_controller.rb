@@ -7,9 +7,22 @@ class TicketsController < ApplicationController
     @tickets = Ticket.all
   end
   def show
-    @tickets = Ticket.find(params[:id])
+    @ticket = Ticket.find(params[:id])
   end
   def new
-    @tickets = Ticket.new
+    @ticket = Ticket.new
+  end
+  def create
+    @ticket = Ticket.new(ticket_params)
+    if @ticket.save
+      redirect_to @ticket
+    else
+      render :new
+    end
+  end
+
+  private
+  def ticket_params
+    params.require(:ticket).permit(:title, :last_name, :first_name, :contact, :description)
   end
 end

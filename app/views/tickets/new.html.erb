@@ -1,0 +1,28 @@
+<h1 id="form-title">Create a Ticket</h1>
+<%= form_with model: @ticket do |form| %>
+<h5>Name</h5>
+<div id="name-line">
+    <div class="name">
+        <%= form.text_field :last_name, :placeholder => "Last" %>
+    </div>
+    <div class="name">
+        <%= form.text_field :first_name, :placeholder => "First" %>
+    </div>
+</div>
+<div class="contact">
+    <h5>Contact</h5>
+    <%= form.text_field :contact, :placeholder => "Email or Phone" %>
+</div>
+<div>
+    <h5>Title</h5>
+    <%= form.text_field :title, :id => "title", :placeholder => "Title your ticket" %>
+</div>
+<div>
+    <h5>Description</h5>
+    <%= form.text_area :description, :id => "description", :placeholder => "Describe your ticket here..." %>
+</div>
+<div id="side-by-side-buttons">
+    <%= form.submit :class => "back-button" %>
+    <%= link_to "Cancel", root_path, :class => "back-button" %>
+</div>
+<% end %>

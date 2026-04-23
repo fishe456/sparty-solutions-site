@@ -25,6 +25,12 @@ h4 {
     margin-top: 134px;
 }
 
+h5 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
 #welcome-to {
     display: flex;
     flex-direction: row;
@@ -88,7 +94,7 @@ a:hover, a:link, a:visited {
     font-weight: 400;
 }
 
-#back-button{
+.back-button{
     color:#f0f0f0;
     font-size: 16px;
     font-weight: 600;
@@ -97,10 +103,35 @@ a:hover, a:link, a:visited {
     border: none;
     width: 150px;
     height: 60px;
-    margin: 50px 0 0 0;
     display: inline-block;
     text-align: center;
     line-height: 60px;
+}
+
+#side-by-side-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#description {
+    width: 35%;
+    height: 150px;
+    text-align: left;
+    padding: 4px 4px 4px 4px;
+}
+
+#form-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#title {
+    width: 30%;
+    height: 25px;
 }
 
 * {

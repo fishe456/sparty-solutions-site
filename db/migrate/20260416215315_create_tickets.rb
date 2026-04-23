@@ -4,8 +4,7 @@ class CreateTickets < ActiveRecord::Migration[8.1]
       t.string :title
       t.string :last_name
       t.string :first_name
-      t.string :email
-      t.integer :phone
+      t.string :contact
       t.string :description
 
       t.timestamps
