@@ -1,2 +1,4 @@
-<h1><%= @ticket.title %></h1>
-<p><%= @ticket.description %></p>
+<h4><%= @ticket.title %></h4>
+<p class="p-name"><%= @ticket.last_name %>, <%= @ticket.first_name %></p>
+<p class="p-desc"><%= @ticket.description %></p>
+<%= link_to "Back", root_path, :class => "back-button" %>

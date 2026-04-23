@@ -106,6 +106,7 @@ a:hover, a:link, a:visited {
     display: inline-block;
     text-align: center;
     line-height: 60px;
+    margin-top: 30px;
 }
 
 #side-by-side-buttons {
@@ -132,6 +133,20 @@ a:hover, a:link, a:visited {
 #title {
     width: 30%;
     height: 25px;
+}
+
+.ticket-link {
+    color: black !important;
+}
+
+.p-desc {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.p-name {
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 * {
