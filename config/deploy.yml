@@ -117,3 +117,8 @@ builder:
 #     port: 6379
 #     directories:
 #       - data:/data
+ssh:
+  user: ubuntu
+  keys:
+    - ./Sparty-Solutions-Key.pem
+  
